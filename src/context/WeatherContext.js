@@ -1,6 +1,6 @@
 import { useContext, createContext, useState, useEffect } from "react";
 import axios from "axios";
-import cities from "../../cities_of_turkey.json";
+
 
 export const WeatherContext = createContext();
 export const useWeather = () => useContext(WeatherContext);
