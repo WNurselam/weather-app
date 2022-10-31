@@ -3,12 +3,12 @@ import cities from "../../cities_of_turkey.json";
 import { useWeather } from "../../context/WeatherContext";
 
 const Dropdown = () => {
-  const { setCity } = useWeather();
+  const { setCity} = useWeather();
 
   const handleChange = (e) => {
-    cities.filter((city) => city.name === e.target.value && setCity(city));
+    const selectCity = cities.find((city) => city.name === e.target.value);
+    setCity(selectCity);
   };
-
   return (
     <div>
       <select onChange={handleChange}>
