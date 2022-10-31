@@ -2,6 +2,7 @@ import React from "react";
 import cities from "../../cities_of_turkey.json";
 import { useWeather } from "../../context/WeatherContext";
 
+
 const Dropdown = () => {
   const { setCity} = useWeather();
 
