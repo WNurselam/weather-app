@@ -1,5 +1,7 @@
 import "./App.css";
+
 import Dropdown from "./components/Dropdown";
+import Today from "./components/Today/Today";
 import WeatherMenu from "./components/WeatherMenu";
 import WeatherProvider from "./context/WeatherContext";
 
@@ -8,6 +10,7 @@ function App() {
     <div className="App">
       <WeatherProvider>
         <Dropdown />
+        <Today />
         <WeatherMenu />
       </WeatherProvider>
     </div>

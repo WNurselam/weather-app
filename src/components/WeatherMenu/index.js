@@ -4,8 +4,7 @@ import Day from "../Day";
 import "./style.css";
 
 const WeatherMenu = () => {
-  const { weather,today } = useWeather();
-
+  const { weather, today } = useWeather();
 
   return (
     <div className="card-container">

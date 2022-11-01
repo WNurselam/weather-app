@@ -1,4 +1,28 @@
-*{
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+}
+
+body {
+  background-color: #141e30;
+  /* background-image: linear-gradient(to right, #141e30, #243b55); */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  color: whitesmoke;
+}
+
+.max {
+  font-size: 28px;
+  padding: 9px;
+}
+
+select {
+  width: 700px;
 }

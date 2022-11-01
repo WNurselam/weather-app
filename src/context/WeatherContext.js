@@ -44,7 +44,7 @@ const WeatherProvider = ({ children }) => {
           `https://api.openweathermap.org/data/2.5/onecall?lat=${city.latitude}&lon=${city.longitude}&exclude=hourly,minutely&units=metric&lang=tr&appid=${key}`
         );
         setWeather(response.data.daily);
-        setToday(response.data)
+        setToday(response.data.current)
       } catch (error) {
         console.log(error);
       }
@@ -52,6 +52,7 @@ const WeatherProvider = ({ children }) => {
     getApi();
   }, [city]);
 
+  
   //console.log(today)
   return (
     <WeatherContext.Provider value={values}>{children}</WeatherContext.Provider>
