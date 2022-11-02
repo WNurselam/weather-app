@@ -25,4 +25,17 @@ body {
 
 select {
   width: 700px;
+  background-color: #141e30;
+  color: whitesmoke;
+  height: 50px;
+  margin-top: 5px;
 }
+
+
+/* @media screen and (max-width: 920px) {
+    .App {
+   
+
+    }
+    
+} */
