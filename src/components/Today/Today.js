@@ -16,7 +16,7 @@ const Today = () => {
         src={`https://openweathermap.org/img/wn/${today?.weather?.[0]?.icon}@4x.png`}
         alt=""
       />
-      <div  className="detail">
+      <div className="detail">
         <span>{today && Math.round(today.temp)} °C</span>
         <span>{today?.weather?.[0]?.main}</span>
       </div>

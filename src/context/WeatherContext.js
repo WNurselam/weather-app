@@ -52,7 +52,6 @@ const WeatherProvider = ({ children }) => {
     getApi();
   }, [city]);
 
-  
   //console.log(today)
   return (
     <WeatherContext.Provider value={values}>{children}</WeatherContext.Provider>
