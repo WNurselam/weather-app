@@ -4,5 +4,5 @@
 - Axios
 
 
-![weather]('./src/assets/weather.png')
+![weather](./src/assets/weather.png)
 
