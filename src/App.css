@@ -4,9 +4,10 @@
 }
 
 body {
-  background-color: #141e30;
+  background-color: #141e30; 
   /* background-image: linear-gradient(to right, #141e30, #243b55); */
 }
+
 
 .App {
   display: flex;
@@ -27,10 +28,9 @@ select {
   width: 700px;
   background-color: #141e30;
   color: whitesmoke;
-  height: 50px;
+  height: 40px;
   margin-top: 5px;
 }
-
 
 /* @media screen and (max-width: 920px) {
     .App {
