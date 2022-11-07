@@ -1,6 +1,6 @@
 import React from "react";
 import { useWeather } from "../../context/WeatherContext";
-import './style.css'
+import "./style.scss";
 
 const Day = ({ item }) => {
   const { days } = useWeather();

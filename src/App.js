@@ -1,5 +1,4 @@
-import "./App.css";
-
+import "./App.scss";
 import Dropdown from "./components/Dropdown";
 import Today from "./components/Today/Today";
 import WeatherMenu from "./components/WeatherMenu";

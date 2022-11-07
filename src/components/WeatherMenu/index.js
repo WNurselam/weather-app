@@ -1,7 +1,7 @@
 import React from "react";
 import { useWeather } from "../../context/WeatherContext";
 import Day from "../Day";
-import "./style.css";
+import "./style.scss";
 
 const WeatherMenu = () => {
   const { weather } = useWeather();
