@@ -1,6 +1,7 @@
 import { useContext, createContext, useState, useEffect } from "react";
 import axios from "axios";
 
+//Context operations
 export const WeatherContext = createContext();
 export const useWeather = () => useContext(WeatherContext);
 
@@ -13,8 +14,8 @@ const WeatherProvider = ({ children }) => {
     population: 2183167,
     region: "Akdeniz",
   });
-  const [weather, setWeather] = useState([]);
-  const [today, setToday] = useState([]);
+  const [weather, setWeather] = useState([]); //days state
+  const [today, setToday] = useState([]); // daily state
 
   const days = [
     "Sunday",
@@ -37,6 +38,8 @@ const WeatherProvider = ({ children }) => {
   };
 
   const key = "fa7589454756fe60987dd083614c101c";
+
+  // FetchApi
   useEffect(() => {
     const getApi = async () => {
       try {
@@ -53,6 +56,7 @@ const WeatherProvider = ({ children }) => {
   }, [city]);
 
   //console.log(today)
+
   return (
     <WeatherContext.Provider value={values}>{children}</WeatherContext.Provider>
   );

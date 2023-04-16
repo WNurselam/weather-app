@@ -3,6 +3,8 @@ import { useWeather } from "../../context/WeatherContext";
 import "./style.scss";
 
 const Today = () => {
+
+  //To get the daily weather
   const { today, city, days } = useWeather();
 
   return (

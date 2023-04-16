@@ -5,6 +5,7 @@ import WeatherMenu from "./components/WeatherMenu";
 import WeatherProvider from "./context/WeatherContext";
 
 function App() {
+  //We provide the context we created here
   return (
     <div className="App">
       <WeatherProvider>

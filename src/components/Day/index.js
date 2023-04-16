@@ -2,8 +2,8 @@ import React from "react";
 import { useWeather } from "../../context/WeatherContext";
 import "./style.scss";
 
-const Day = ({ item }) => {
-  const { days } = useWeather();
+const Day = ({ item }) => { 
+ const { days } = useWeather(); // Context state
 
   return (
     <div className="card">
